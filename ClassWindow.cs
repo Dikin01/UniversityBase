@@ -14,7 +14,7 @@ namespace UB._1
 {
     public partial class ClassWindow : Form
     {
-        OleDbConnection cn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\kondi\Desktop\Database1.mdb");
+        OleDbConnection cn = Form1.cn;
 
         public List<T> GetControls<T>(Control control) where T : Control
         {
